@@ -1,6 +1,6 @@
 # README
 
-This model was created as part of a group project set-up by University of Liverpool. The project exists on https://github.com/jgasmi/AirQuality-ML/tree/main.
+This model was created as part of a group project set-up by University of Liverpool. The project exists here: [AirQuality-ML](https://github.com/jgasmi/AirQuality-ML/tree/main).
 
 ## XGBoostRegressor Model selection
 
