@@ -143,15 +143,8 @@ b. Data visulalization using Matplotlib and Seaborn.
 
 c. Used Distribution plot, Join plot, Pair plot, Box plot, Heatmap, Seaborn’s ‘catplot’ i.e.  plot showcasing relationship between numerical and categorical variables i.e. catplot, Count plot, Bar plot.
 
-### 8.	[In progress] Sentiment Analysis
 
-**Objective:** Prediction using RandomForrestClassifier and performance measure with sklearn metrics like confusion matrix, precision, recall, F-score, accuracy, auc and roc_curve
-
-**Frameworks and Libraries:** cv2, InceptionV3, TensorFlow, Keras, Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-### 9.	[In progress] Predict LoS (Length of Stay) of patients in a hospital
+### 8.	Predict LoS (Length of Stay) of patients in a hospital
 
 **Objective:** Prediction using Keras Model
 
@@ -183,6 +176,13 @@ b. Pre-process categorical features using:
 
     vii) Compile and Build the model
 
+### 9.	[In progress] Sentiment Analysis
+
+**Objective:** Prediction using RandomForrestClassifier and performance measure with sklearn metrics like confusion matrix, precision, recall, F-score, accuracy, auc and roc_curve
+
+**Frameworks and Libraries:** cv2, InceptionV3, TensorFlow, Keras, Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
 
 ### 10.	[In progress] Transfer Learning using Inception
 
