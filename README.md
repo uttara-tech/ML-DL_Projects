@@ -4,7 +4,7 @@
 
 ### A brief outline of machine learning and deep learning projects:
 
-### 1.	Atmospheric Emissions Prediction 
+### 1.	ML model for Atmospheric Emissions Prediction 
 
 **Objective**: XGBoostRegression model for predicting CO2 emissions
 
