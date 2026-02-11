@@ -1,15 +1,4 @@
----
-title: COVID-19 Radiography Database
-emoji: 🐨
-colorFrom: green
-colorTo: green
-sdk: gradio
-sdk_version: 6.5.1
-app_file: app.py
-python_version: "3.12.12"
-pinned: True
-short_description: 'U-NET model for Multi-class classification '
----
+# U-NET model for Multi-class classification 
 
 The dataset for this project is downloaded from Kaggle - 'COVID-19 Radiography Database'. Available at: https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database.
 
