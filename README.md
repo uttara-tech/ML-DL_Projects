@@ -4,147 +4,23 @@
 
 ### A brief outline of machine learning and deep learning projects:
 
-### 1.	ML model for Atmospheric Emissions Prediction 
+### [DL]    U-Net for Multi-Class Classification via Scalable Data Pipelines to support clinical review
 
-**Objective**: XGBoostRegression model for predicting CO2 emissions
+**Objective**: Custom CNN-based U-Net architecture for predicting lung infection
 
-**Libraries**: XGBoostRegressor (from xgboost), SHAP,mean_squared_error, Numpy, Pandas, Matplotlib, XGBoost, Seaborn
-
-**Overview:**
-
-a. Data preprocessing - checking for null values, replacing zero values with column mean
-
-b. Feature Engineering for selecting most influencial components like extracting NOx, PM2.5, PM10 as features and CO2 as target.
-
-c. Dataset filtering - extracting records only for the year 2019.
-
-d. Used XGBoostRegressor for making predictions. A detailed report avaialble in the project folder.
-
-
-### 2.	Student Information System
-
-**Objective**: Data cleaning and pre-processing
-
-**Libraries**: SimpleImputer, CountVectorizer, WordCloud, regex, missingno, LogisticRegression, OneHotEncoder, ColumnTransformer, Pipeline, LabelEncoder, Numpy, Pandas, Matplotlib, Seaborn
+**Libraries**: Tensorflow, Keras, Scikit-learn, OpenCV, Pillow, Numpy, Matplotlib Seaborn
 
 **Overview:**
 
-The provided data had multiple issues. Initial observations (which are re-iterated in the jupyter file) are as below: 
+a. Data preprocessing - using tf.data API for normalization, resizing images and fusing X-rays and Masks.
 
-a. Null values (multiple columns contained 'NaN' values)
+b. Class imbalance handling - using a hybrid loss function “Categorical-Focal Crossentropy”. The project optionally applies data augmentation techniques (on random images) like rotations and flips. 
 
-b. Data accuracy and consistency issues (e.g. mixture of alphanumeric and integer values in 'ID' column)
+c. Training and evaluation - monitored validation performance parameters like accuracy, loss and AUC to prevent overfitting and monitor model performance/generalization,  and saved the best-performing model checkpoints.
 
-c. Data uniformity issues (inconsistent column naming convention)
+d. Outcome - The project produced a trained image-classification model that can automatically categorize chest X‑ray images into four classes—COVID‑19, Viral Pneumonia, Lung opacity or Normal—based on learned visual patterns. The final deliverable includes the trained model and an inference pipeline that takes an X‑ray and its corresponding mask as inputs, and outputs the predicted class (with associated confidence scores).
 
-d. Noisy Data (e.g. special characters in some columns)
-
-Below data cleaning measures were employed to make the data complete and valid by filling in missing values, followed by making it accurate, consistent, and uniform (detailed in Jupyter Notebook):
-
-a. Missing Completely at Random (MCAR) 
-
-b. Missing at Random (MAR) 
-
-c. Missing Not at Random (MNAR)
-
-d. Deletion and Imputaion
-
-
-### 3.	Wine data analysis
-
-**Objective**: Hyperparameter Tuning and Pipelining using XGBoost
-
-**Libraries**: Numpy, Pandas, Matplotlib, XGBoost, Seaborn
-
-**Overview:**
-
-a. Data preprocessing - checking for null values
-
-b. Data analysis and representation using Matplotlib.
-
-c. Hyperparameter tuning and Pipelining using XGBoost.
-
-d. Comparison of accuracy derived by different hyperparameter combinations using Grid Search, Random Search and Bayesian Optimization.
-
-### 4.	Breast Cancer Prediction
-
-**Objective:** Multi-class model in Machine Learning
-
-**Libraries:** Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-a. Pre-processing data, like checking for null values and drop unwanted columns, and standardizing all values using Scikit-learn (sklearn)
-
-b. Performing PCA for dimensionality reduction. 10 out of 30 columns are enough to explain 95% of variance.
-
-c. Training and Testing the data with these 10 columns.
-
-d. Utilizing default classifiers for below machine learning algorithms:
-
-    i)   Descision Tree Classifier
-    ii)  Random Forest Classifier
-    iii) XGB (eXtreme Gradient Boosting) Classifier
-    iv)  Gradient Boosting Classifier
-    v)   Extra Trees Classifier
-    vi)  K-nearest Neighbors Classifier
-
-e. Training the data with all the above classifiers
-
-f. Testing the data, making predictions and calculating accuracy accordingly.
-
-g. Using a confusion matrix to evalute the performance of all classifiers.
-
-h. Representing and comparing all classifier performances with an AUC and ROC curve, and sklearn metrics like confusion matrix, accuracy score, precision, recall and F-score.
-
-### 5.	Newton-Raphson
-
-**Objective:** Newton-Raphson mathematical representation using Python
-
-**Libraries:** SciPy, Math, Sympy, Numpy, Matplotlib
-
-**Overview:**
-
-a. Define a function using Math
-
-b. Calculating derivative of the function to determine critical points
-c. Using SciPy’s built-in Newton’s algorithm  for optimization of given function.
-d. The code is a representation of mathematical calculations performed in Question (1.c): https://github.com/uttara-tech/typesetting-LaTeX/blob/8fbead2715a8d54141a1f6b09b3e073e6d3bd9a7/linear_algebra/Mid_Module_Assignment.pdf
-
-    Repository - typesetting-LaTeX
-    Folder - linear_algebra
-    File - Mid_Module_Assignment.pdf, Question (1.c)
-
-### 6.	Video Games sales data analysis
-
-**Objective:** Exploratory Data Analysis
-
-**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-a. Exploring and grouping the data.
-
-b. Data visulalization using Matplotlib and Seaborn.
-
-c. Used Heatmap, Histogram, Count plot, Bar plot, Group Bar plot, Joinplot.
-
-### 7.	Students Performance
-
-**Objective:** Exploratory Data Analysis
-
-**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-a. Exploring and grouping the data.
-
-b. Data visulalization using Matplotlib and Seaborn.
-
-c. Used Distribution plot, Join plot, Pair plot, Box plot, Heatmap, Seaborn’s ‘catplot’ i.e.  plot showcasing relationship between numerical and categorical variables i.e. catplot, Count plot, Bar plot.
-
-
-### 8.	Predict LoS (Length of Stay) of patients in a hospital
+### [DL]	Predict LoS (Length of Stay) of patients in a hospital
 
 **Objective:** Prediction using Keras Model
 
@@ -176,7 +52,149 @@ b. Pre-process categorical features using:
 
     vii) Compile and Build the model
 
-### 9.	[In progress] Sentiment Analysis
+### [ML]    Atmospheric Emissions Prediction 
+
+**Objective**: XGBoostRegression model for predicting CO2 emissions
+
+**Libraries**: XGBoostRegressor (from xgboost), SHAP,mean_squared_error, Numpy, Pandas, Matplotlib, XGBoost, Seaborn
+
+**Overview:**
+
+a. Data preprocessing - checking for null values, replacing zero values with column mean
+
+b. Feature Engineering for selecting most influencial components like extracting NOx, PM2.5, PM10 as features and CO2 as target.
+
+c. Dataset filtering - extracting records only for the year 2019.
+
+d. Used XGBoostRegressor for making predictions. A detailed report avaialble in the project folder.
+
+### [ML]    Breast Cancer Prediction
+
+**Objective:** Multi-class model in Machine Learning
+
+**Libraries:** Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
+
+a. Pre-processing data, like checking for null values and drop unwanted columns, and standardizing all values using Scikit-learn (sklearn)
+
+b. Performing PCA for dimensionality reduction. 10 out of 30 columns are enough to explain 95% of variance.
+
+c. Training and Testing the data with these 10 columns.
+
+d. Utilizing default classifiers for below machine learning algorithms:
+
+    i)   Descision Tree Classifier
+    ii)  Random Forest Classifier
+    iii) XGB (eXtreme Gradient Boosting) Classifier
+    iv)  Gradient Boosting Classifier
+    v)   Extra Trees Classifier
+    vi)  K-nearest Neighbors Classifier
+
+e. Training the data with all the above classifiers
+
+f. Testing the data, making predictions and calculating accuracy accordingly.
+
+g. Using a confusion matrix to evalute the performance of all classifiers.
+
+h. Representing and comparing all classifier performances with an AUC and ROC curve, and sklearn metrics like confusion matrix, accuracy score, precision, recall and F-score.
+
+
+### [ML]    Student Information System
+
+**Objective**: Data cleaning and pre-processing
+
+**Libraries**: SimpleImputer, CountVectorizer, WordCloud, regex, missingno, LogisticRegression, OneHotEncoder, ColumnTransformer, Pipeline, LabelEncoder, Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
+
+The provided data had multiple issues. Initial observations (which are re-iterated in the jupyter file) are as below: 
+
+a. Null values (multiple columns contained 'NaN' values)
+
+b. Data accuracy and consistency issues (e.g. mixture of alphanumeric and integer values in 'ID' column)
+
+c. Data uniformity issues (inconsistent column naming convention)
+
+d. Noisy Data (e.g. special characters in some columns)
+
+Below data cleaning measures were employed to make the data complete and valid by filling in missing values, followed by making it accurate, consistent, and uniform (detailed in Jupyter Notebook):
+
+a. Missing Completely at Random (MCAR) 
+
+b. Missing at Random (MAR) 
+
+c. Missing Not at Random (MNAR)
+
+d. Deletion and Imputaion
+
+
+### [ML]    Wine data analysis
+
+**Objective**: Hyperparameter Tuning and Pipelining using XGBoost
+
+**Libraries**: Numpy, Pandas, Matplotlib, XGBoost, Seaborn
+
+**Overview:**
+
+a. Data preprocessing - checking for null values
+
+b. Data analysis and representation using Matplotlib.
+
+c. Hyperparameter tuning and Pipelining using XGBoost.
+
+d. Comparison of accuracy derived by different hyperparameter combinations using Grid Search, Random Search and Bayesian Optimization.
+
+
+### [PYTHON]	Newton-Raphson
+
+**Objective:** Newton-Raphson mathematical representation using Python
+
+**Libraries:** SciPy, Math, Sympy, Numpy, Matplotlib
+
+**Overview:**
+
+a. Define a function using Math
+
+b. Calculating derivative of the function to determine critical points
+c. Using SciPy’s built-in Newton’s algorithm  for optimization of given function.
+d. The code is a representation of mathematical calculations performed in Question (1.c): https://github.com/uttara-tech/typesetting-LaTeX/blob/8fbead2715a8d54141a1f6b09b3e073e6d3bd9a7/linear_algebra/Mid_Module_Assignment.pdf
+
+    Repository - typesetting-LaTeX
+    Folder - linear_algebra
+    File - Mid_Module_Assignment.pdf, Question (1.c)
+
+### [ML]	Video Games sales data analysis
+
+**Objective:** Exploratory Data Analysis
+
+**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
+
+a. Exploring and grouping the data.
+
+b. Data visulalization using Matplotlib and Seaborn.
+
+c. Used Heatmap, Histogram, Count plot, Bar plot, Group Bar plot, Joinplot.
+
+### [ML]	Students Performance
+
+**Objective:** Exploratory Data Analysis
+
+**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
+
+a. Exploring and grouping the data.
+
+b. Data visulalization using Matplotlib and Seaborn.
+
+c. Used Distribution plot, Join plot, Pair plot, Box plot, Heatmap, Seaborn’s ‘catplot’ i.e.  plot showcasing relationship between numerical and categorical variables i.e. catplot, Count plot, Bar plot.
+
+
+
+### [DL]	[In progress] Sentiment Analysis
 
 **Objective:** Prediction using RandomForrestClassifier and performance measure with sklearn metrics like confusion matrix, precision, recall, F-score, accuracy, auc and roc_curve
 
