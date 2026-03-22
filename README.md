@@ -2,9 +2,11 @@
 
 ## Overview
 
-### A brief outline of machine learning and deep learning projects:
+### A brief outline of Deep Learning and Machine Learning projects (with links to corresponding source code):
 
-### [DL]    U-Net for Multi-Class Classification via Scalable Data Pipelines to support clinical review
+### [DL]    U-Net for Multi-Class Classification via Scalable Data Pipelines to support clinical review 
+
+[Interactive Demo](https://huggingface.co/spaces/aicolab25/COVID-19_Radiography_Database) | [Codebase](https://github.com/uttara-tech/ML-DL_Projects/tree/main/pneumonia_detection)
 
 **Objective**: Custom CNN-based U-Net architecture for predicting lung infection
 
@@ -20,7 +22,10 @@ c. Training and evaluation - monitored validation performance parameters like ac
 
 d. Outcome - The project produced a trained image-classification model that can automatically categorize chest X‑ray images into four classes—COVID‑19, Viral Pneumonia, Lung opacity or Normal—based on learned visual patterns. The final deliverable includes the trained model and an inference pipeline that takes an X‑ray and its corresponding mask as inputs, and outputs the predicted class (with associated confidence scores).
 
+
 ### [DL]	Predict LoS (Length of Stay) of patients in a hospital
+
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/blob/main/predict-los-in-hospital-using-lstm-cnn-mimic3d.ipynb)
 
 **Objective:** Prediction using Keras Model
 
@@ -52,7 +57,20 @@ b. Pre-process categorical features using:
 
     vii) Compile and Build the model
 
+### [DL]	[In progress] Sentiment Analysis
+
+**Objective:** Prediction using RandomForrestClassifier and performance measure with sklearn metrics like confusion matrix, precision, recall, F-score, accuracy, auc and roc_curve
+
+**Frameworks and Libraries:** cv2, InceptionV3, TensorFlow, Keras, Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
+
+**Overview:**
+
+
 ### [ML]    Atmospheric Emissions Prediction 
+
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/tree/main/Atmospheric%20emissions)
 
 **Objective**: XGBoostRegression model for predicting CO2 emissions
 
@@ -68,7 +86,10 @@ c. Dataset filtering - extracting records only for the year 2019.
 
 d. Used XGBoostRegressor for making predictions. A detailed report avaialble in the project folder.
 
+
 ### [ML]    Breast Cancer Prediction
+
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/blob/main/breast-cancer-prediction.ipynb)
 
 **Objective:** Multi-class model in Machine Learning
 
@@ -102,6 +123,8 @@ h. Representing and comparing all classifier performances with an AUC and ROC cu
 
 ### [ML]    Student Information System
 
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/blob/main/student_information_system_preprocessing.ipynb)
+
 **Objective**: Data cleaning and pre-processing
 
 **Libraries**: SimpleImputer, CountVectorizer, WordCloud, regex, missingno, LogisticRegression, OneHotEncoder, ColumnTransformer, Pipeline, LabelEncoder, Numpy, Pandas, Matplotlib, Seaborn
@@ -131,6 +154,8 @@ d. Deletion and Imputaion
 
 ### [ML]    Wine data analysis
 
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/blob/main/wine-data-analysis-and-hyperparameter-tuning.ipynb)
+
 **Objective**: Hyperparameter Tuning and Pipelining using XGBoost
 
 **Libraries**: Numpy, Pandas, Matplotlib, XGBoost, Seaborn
@@ -146,7 +171,43 @@ c. Hyperparameter tuning and Pipelining using XGBoost.
 d. Comparison of accuracy derived by different hyperparameter combinations using Grid Search, Random Search and Bayesian Optimization.
 
 
+### [ML]	Video Games sales data analysis
+
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/blob/main/video-games-sales-data-analysis.ipynb)
+
+**Objective:** Exploratory Data Analysis
+
+**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
+
+a. Exploring and grouping the data.
+
+b. Data visulalization using Matplotlib and Seaborn.
+
+c. Used Heatmap, Histogram, Count plot, Bar plot, Group Bar plot, Joinplot.
+
+
+### [ML]	Students Performance
+
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/blob/main/students-performance.ipynb)
+
+**Objective:** Exploratory Data Analysis
+
+**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
+
+**Overview:**
+
+a. Exploring and grouping the data.
+
+b. Data visulalization using Matplotlib and Seaborn.
+
+c. Used Distribution plot, Join plot, Pair plot, Box plot, Heatmap, Seaborn’s ‘catplot’ i.e.  plot showcasing relationship between numerical and categorical variables i.e. catplot, Count plot, Bar plot.
+
+
 ### [PYTHON]	Newton-Raphson
+
+[Codebase](https://github.com/uttara-tech/ML-DL_Projects/blob/main/newton-raphson.ipynb)
 
 **Objective:** Newton-Raphson mathematical representation using Python
 
@@ -163,51 +224,3 @@ d. The code is a representation of mathematical calculations performed in Questi
     Repository - typesetting-LaTeX
     Folder - linear_algebra
     File - Mid_Module_Assignment.pdf, Question (1.c)
-
-### [ML]	Video Games sales data analysis
-
-**Objective:** Exploratory Data Analysis
-
-**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-a. Exploring and grouping the data.
-
-b. Data visulalization using Matplotlib and Seaborn.
-
-c. Used Heatmap, Histogram, Count plot, Bar plot, Group Bar plot, Joinplot.
-
-### [ML]	Students Performance
-
-**Objective:** Exploratory Data Analysis
-
-**Libraries:** Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-a. Exploring and grouping the data.
-
-b. Data visulalization using Matplotlib and Seaborn.
-
-c. Used Distribution plot, Join plot, Pair plot, Box plot, Heatmap, Seaborn’s ‘catplot’ i.e.  plot showcasing relationship between numerical and categorical variables i.e. catplot, Count plot, Bar plot.
-
-
-
-### [DL]	[In progress] Sentiment Analysis
-
-**Objective:** Prediction using RandomForrestClassifier and performance measure with sklearn metrics like confusion matrix, precision, recall, F-score, accuracy, auc and roc_curve
-
-**Frameworks and Libraries:** cv2, InceptionV3, TensorFlow, Keras, Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-### 10.	[In progress] Transfer Learning using Inception
-
-**Objective:** Prediction using Keras Model
-
-**Frameworks and Libraries:** cv2, InceptionV3, TensorFlow, Keras, Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn
-
-**Overview:**
-
-
